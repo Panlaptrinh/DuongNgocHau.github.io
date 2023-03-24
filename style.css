@@ -1,256 +1,64 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+*{
+	padding: 0;
+	margin: 0 auto;
 }
-body 
-{
-    background: #e768d9;
-    background: linear-gradient(108deg,#e768d9 0%, #91c5d5 80%);
-    background: -webkit-linear-gradient(108deg,#e768d9 0%, #91c5d5 80%);
-    background: -moz-linear-gradient(108deg,#e768d9 0%, #91c5d5 80%);
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-
+header{
+	font-family: arial;
+	width: 980px;
+	height: 100px;
+	background: orange;
 }
-
-.container{
-    margin: 0 auto;
-    width: 1200px;
+header h2{
+	font-size: 40px;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+}
+header h5{
+	font-size: 20px;
+	color: red;
+	text-align: center;
+	padding-top: 10px;
 }
 #menu{
-    margin-top: -5px;
+	background: blue;
+	width: 980px;
+	height: 32px;
 }
-#menu ul {
- background: #FF3366;
- list-style-type: none;
- text-align: center;
+#dropdownlist{
+	float: left;
+	width: 980px;
 }
-#menu li {
- color: #f1f1f1;
- display: inline-block;
- width: 120px;
- height: 40px;
- line-height: 40px;
- margin-left: -5px;
+#dropdownlist li{
+	padding: 0 30px 0 3	0px;
+	border-radius: 50px;
+	border: 2px solid white;
+	width: 90px;
+	list-style: none;
+	line-height: 25px;
+	margin: 2px;
+	float: left;
 }
-#menu a {
- text-decoration: none;
- color: #fff;
- display: block;
+#dropdownlist li a{
+	margin-left: 10px;
+	color: red;
+	text-decoration: none;
+	font-weight: bold;
 }
-#menu a:hover {
- background: #CC3366;
- color: #FF6600;
+#dropdownlist ul{
+	display: none;
+	padding: 0px;
 }
-.sub-menu li {
- display: none;
+#dropdownlist ul li{
+	width: 80px;
+	background: green;
 }
-.sub-menu {
- display: none;
- position: absolute;
+#dropdownlist li a:hover{
+	color: white;
 }
-#menu li:hover .sub-menu {
- display: block;
+#dropdownlist li ul li a{
+	color: white;
 }
-.sub-menu li {
-    margin-left: 0 !important;
-}
-.banner{
-
-}
-.console-container {
-   font-weight: bold;
-   font-family:Khula;
-   font-size:30px;
-   text-align:center;
-   width:100%;
-   display:block;
-   color:white;
-   top:0;
-   bottom:0;
-   left:0;
-   right:0;
-   margin:auto;
-}
-.console-underscore {
- display:inline-block;
- left:10px;
-}
-#formnap{
-    border-radius: 20%;
-}
-.square_box {
-    position: absolute;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    border-top-left-radius: 45px;
-    opacity: 0.302;
-}
-.square_box.box_one {
-    background-image: -moz-linear-gradient(-90deg, #3399FF 0%, #00CCCC 100%);
-    background-image: -webkit-linear-gradient(-90deg, #3399FF 0%, #00CCCC 100%);
-    background-image: -ms-linear-gradient(-90deg, #3399FF 0%, #00CCCC 100%);
-    opacity: 0.059;
-    right: 120px;
-    top: 500px;
-    width: 200px;
-    height: 200px;
-    border-radius: 45px;
-}
-
-.square_box.box_two {
-    background-image: -moz-linear-gradient(-90deg, #3399FF 0%, #00CCCC 100%);
-    background-image: -webkit-linear-gradient(-90deg, #3399FF 0%, #00CCCC 100%);
-    background-image: -ms-linear-gradient(-90deg, #3399FF 0%, #00CCCC 100%);
-    opacity: 0.059;
-    right: 250px;
-    top: 500px;
-    width: 220px;
-    height: 220px;
-    border-radius: 45px;
-}
-
-.square_box.box_three {
-    background-image: -moz-linear-gradient(-90deg, #FF00FF 0%, #3d57f4 100%);
-    background-image: -webkit-linear-gradient(-90deg, #FF00FF 0%, #3d57f4 100%);
-    background-image: -ms-linear-gradient(-90deg, #FF00FF 0%, #3d57f4 100%);
-    opacity: 0.059;
-    left: 20px;
-    top: 50px;
-    width: 200px;
-    height: 200px;
-    border-radius: 45px;
-}
-
-.square_box.box_four {
-    background-image: -moz-linear-gradient(-90deg, #FF00FF 0%, #3d57f4 100%);
-    background-image: -webkit-linear-gradient(-90deg, #FF00FF 0%, #3d57f4 100%);
-    background-image: -ms-linear-gradient(-90deg, #FF00FF 0%, #3d57f4 100%);
-    opacity: 0.059;
-    left: 150px;
-    top: 50px;
-    width: 220px;
-    height: 220px;
-    border-radius: 45px;
-}
-footer{
-    float: left;
-    width: 100%;
-}
-footer.footer {
-    margin-right: -15px;
-    margin-left: -15px;
-    padding-bottom: 15px;
-    text-align: center;
-    margin-top: 50px;
-    padding-top: 40px;
-    background: #252525;
-    font-weight: bold;
-    color: white;
-    -webkit-clip-path: polygon(0 0,36% 0,calc(36% + 1.25rem) 1.25rem,100% 1.25rem,100% 100%,0 100%);
-    clip-path: polygon(0 0,36% 0,calc(36% + 1.25rem) 1.25rem,100% 1.25rem,100% 100%,0 100%);
-}
-footer a{
-    text-decoration: none;
-    font-weight: bold;
-    color: deeppink;
-}
-footer a:hover{
-    font-size: 15px;
-    text-decoration: none;
-    font-weight: bold;
-    color: pink;
-}.nav-link{
-    margin-bottom: 20px;
-}
-.sanpham{
-    text-align: center;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    width: 350px;
-    background: lightgray;
-    height: 530px;
-    float: left;
-    margin-left: 40px;
-}
-.sanpham img{
-    margin-top: 30px;
-}
-.anhsp{
-    width: 100%;
-    height: 360px;
-}
-.tensp{
-    font-weight: bold;
-    padding-top: 18px;
-    color: white;
-    width: 100%;
-    height: 10%;
-}
-.giasp{
-    font-weight: bold;
-    padding-top: 18px;
-    color: white;
-    width: 100%;
-    height: 10%;
-}
-.chitietsp a{
-    color: red;
-    text-decoration: none;
-    font-weight: bold;
-}
-.chitietsp a:hover{
-    color: darkred;
-    text-decoration: none;
-    font-weight: bold;
-}
-.thongtinsp{
-    border-radius: 20px;
-    width: 90%;
-    margin: 0 auto;
-    background: white;
-    height: 400px;
-    text-align: center;
-}
-.anhspthongtin{
-    float: left;
-    text-align: center;
-    width: 35%;
-    height: 400px;
-}
-.anhspthongtin img{
-    margin-top: 30px;
-}
-.tenspthongtin{
-    float: left;
-    width: 65%;
-    height: 50px;
-    color: orange;
-    font-size: 30px;
-    font-weight: bold;
-    padding-top: 10px;
-}
-.motasp{
-    float: left;
-    width: 65%;
-    height: 300px;
-    color: darkred;
-}
-.motasp a{
-    color: blue;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-}
-.motasp a:hover{
-    color: darkblue;
-}
-.thongtinsp hr{
-    margin-top: 20px;
-    margin-bottom: 20px;
+#dropdownlist li ul li a:hover{
+	color: orange;
 }
